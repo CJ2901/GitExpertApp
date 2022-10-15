@@ -1,12 +1,9 @@
-import { useState, useEffect } from "react";
 import { GifItem } from "./GifItem";
-// import { getGifs } from "../helpers/getGifs"
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
 export const GifGrid = ({ category }) => {
 
   // Primera utilización de un custom hook
-
   const { images, isLoading } = useFetchGifs(category);
 
 
